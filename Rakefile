@@ -5,8 +5,10 @@ API_TOKEN  = 'ca6ea4b452f2026183e757f61743540d_OTg0NzA3MjAxMy0wNC0xMSAwODoyNzoyM
 TEAM_TOKEN = '8142ce7ed9a6b9d699dd797791c2ec6b_MTg3ODM1MjAxMy0wMy0xNCAwNDo0NjoxOS4zMzU3NzA'
 
 task :run_travis_scripts do
+  branch = `git rev-parse --abbrev-ref HEAD`	
   # if branch.strip == "staging" 
-  #   puts "this is the staging branch - no script for this at the moment"
+  puts "this is the staging branch - no script for this at the moment"
+  puts branch
   if is_master_branch
   	puts "****************************** is master"
     publish_to_testflight
@@ -38,6 +40,8 @@ end
 
 def is_master_branch
     branch = ENV['GIT_BRANCH']
+    puts "this is the branch:"
+    puts branch
     branch == "origin/master" ? true : false
 end
 
