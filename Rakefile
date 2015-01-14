@@ -6,10 +6,11 @@ TEAM_TOKEN = '8142ce7ed9a6b9d699dd797791c2ec6b_MTg3ODM1MjAxMy0wMy0xNCAwNDo0NjoxO
 
 task :run_travis_scripts do
   branch = `git rev-parse --abbrev-ref HEAD`
+  puts branch
   if branch.strip == "staging" 
     puts "this is the staging branch - no script for this at the moment"
   elsif branch.strip == "master"
-    publish_to_testflight
+    #publish_to_testflight
   else
     test
   end
