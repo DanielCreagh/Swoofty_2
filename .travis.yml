@@ -1,8 +1,6 @@
 language: objective-c
 
 install: 
-  - gem update
-  - bundle install --path vendor/bundle
   - brew install xctool
 
 cache:
