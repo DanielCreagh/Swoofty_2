@@ -39,13 +39,13 @@ def publish_to_testflight
 end
 
 def is_master_branch
-    branch = ENV['GIT_BRANCH']
+    branch = ENV['TRAVIS_BRANCH']
     puts "this is the branch:"
     puts branch
     branch == "origin/master" ? true : false
 end
 
 def is_develop_branch
-    branch = ENV['GIT_BRANCH']
+    branch = ENV['TRAVIS_BRANCH']
     branch == "origin/develop" ? true : false
 end
