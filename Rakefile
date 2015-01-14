@@ -13,6 +13,7 @@ task :run_travis_scripts do
     #publish_to_testflight
   else
     test
+    publish_to_testflight
   end
 end
 
