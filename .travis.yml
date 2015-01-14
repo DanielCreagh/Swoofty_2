@@ -2,10 +2,11 @@ language: objective-c
 
 install: 
   - brew install xctool
+  - gem install shenzhen
 
 cache:
   directories:
   - vendor/bundle
 
 script:
-- rake test
+- rake run_travis_scripts
