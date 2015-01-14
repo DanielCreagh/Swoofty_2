@@ -27,11 +27,12 @@ end
 desc "test to see if rake file is working"
 def publish_to_testflight
   puts "publishing to testflight"
-  sh "xctool archive -archivePath artifacts/archive/ -scheme Swoofty_2"
+  sh "ipa build --clean --archive --project Swoofty_2.xcodeproj --scheme Swoofty_2 --configuration Debug --destination moreArtifacts/archive/"
   sh %{ipa distribute:testflight -a #{API_TOKEN} -T #{TEAM_TOKEN} -f "moreArtifacts/archive/Swoofty_2.ipa"  --notes 'CI deployment' --lists 'InternationalWrapper' --notify --replace --trace}
   puts "finished publishing to test flight"
 end
 
+# methods
 def is_master_branch
     branch = ENV['TRAVIS_BRANCH']
     branch == "master" ? true : false
@@ -40,4 +41,9 @@ end
 def is_develop_branch
     branch = ENV['TRAVIS_BRANCH']
     branch == "origin/develop" ? true : false
+end
+
+# local convenience methods
+task :local_deploy_to_testflight do
+  publish_to_testflight
 end
