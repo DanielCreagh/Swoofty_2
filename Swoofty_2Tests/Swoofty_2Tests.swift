@@ -1,19 +1,25 @@
 //
-//  Swoofty_2Tests.swift
-//  Swoofty_2Tests
+//  SwooftyTests.swift
+//  SwooftyTests
 //
-//  Created by Daniel Creagh on 13/01/2015.
+//  Created by Daniel Creagh on 12/01/2015.
 //  Copyright (c) 2015 Daniel Creagh. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class Swoofty_2Tests: XCTestCase {
+class SwooftyTests: XCTestCase {
+    
+    var mockParser: MockOrderPickParser!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        mockParser = MockOrderPickParser()
+        
+        
     }
     
     override func tearDown() {
@@ -21,15 +27,15 @@ class Swoofty_2Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func testParserExectues() {
+        
+        if let picData = mockParser.getPickOrderData() {
+            println("******* picdata")
+            println(picData["deliveryReferences"])
+            
+            let result = parseJsonToPickOrders(picData)
+            
+            XCTAssert(result == "4097550356", "parser not return 'egg'")
         }
     }
     

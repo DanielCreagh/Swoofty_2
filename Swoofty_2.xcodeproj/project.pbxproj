@@ -13,6 +13,16 @@
 		F25DCCC71A6583C4006D8416 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25DCCC61A6583C4006D8416 /* Images.xcassets */; };
 		F25DCCCA1A6583C4006D8416 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25DCCC81A6583C4006D8416 /* LaunchScreen.xib */; };
 		F25DCCD61A6583C4006D8416 /* Swoofty_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCCD51A6583C4006D8416 /* Swoofty_2Tests.swift */; };
+		F25DCCE01A6585E6006D8416 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCCDF1A6585E6006D8416 /* SwiftyJSON.swift */; };
+		F25DCD201A658F4D006D8416 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F25DCD191A658F3B006D8416 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F25DCD251A6674D8006D8416 /* PickOrderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD241A6674D8006D8416 /* PickOrderParser.swift */; };
+		F25DCD261A6674D8006D8416 /* PickOrderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD241A6674D8006D8416 /* PickOrderParser.swift */; };
+		F25DCD281A6674EE006D8416 /* PickOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD271A6674EE006D8416 /* PickOrder.swift */; };
+		F25DCD291A6674EE006D8416 /* PickOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD271A6674EE006D8416 /* PickOrder.swift */; };
+		F25DCD2C1A6678BC006D8416 /* MockOrderPickParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD2B1A6678BC006D8416 /* MockOrderPickParser.swift */; };
+		F25DCD2D1A6678BC006D8416 /* MockOrderPickParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCD2B1A6678BC006D8416 /* MockOrderPickParser.swift */; };
+		F25DCD2F1A667970006D8416 /* TestParserData.json in Resources */ = {isa = PBXBuildFile; fileRef = F25DCD2E1A667970006D8416 /* TestParserData.json */; };
+		F25DCD301A667970006D8416 /* TestParserData.json in Resources */ = {isa = PBXBuildFile; fileRef = F25DCD2E1A667970006D8416 /* TestParserData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +33,49 @@
 			remoteGlobalIDString = F25DCCB91A6583C4006D8416;
 			remoteInfo = Swoofty_2;
 		};
+		F25DCD181A658F3B006D8416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		F25DCD1A1A658F3B006D8416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		F25DCD1C1A658F3B006D8416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		F25DCD1E1A658F44006D8416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F25DCCED1A658E2F006D8416 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F25DCD201A658F4D006D8416 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F25DCCBA1A6583C4006D8416 /* Swoofty_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoofty_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +88,12 @@
 		F25DCCCF1A6583C4006D8416 /* Swoofty_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swoofty_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25DCCD41A6583C4006D8416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25DCCD51A6583C4006D8416 /* Swoofty_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swoofty_2Tests.swift; sourceTree = "<group>"; };
+		F25DCCDF1A6585E6006D8416 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		F25DCD241A6674D8006D8416 /* PickOrderParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOrderParser.swift; sourceTree = "<group>"; };
+		F25DCD271A6674EE006D8416 /* PickOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOrder.swift; sourceTree = "<group>"; };
+		F25DCD2B1A6678BC006D8416 /* MockOrderPickParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockOrderPickParser.swift; sourceTree = "<group>"; };
+		F25DCD2E1A667970006D8416 /* TestParserData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestParserData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +117,7 @@
 		F25DCCB11A6583C4006D8416 = {
 			isa = PBXGroup;
 			children = (
+				F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */,
 				F25DCCBC1A6583C4006D8416 /* Swoofty_2 */,
 				F25DCCD21A6583C4006D8416 /* Swoofty_2Tests */,
 				F25DCCBB1A6583C4006D8416 /* Products */,
@@ -77,12 +136,15 @@
 		F25DCCBC1A6583C4006D8416 /* Swoofty_2 */ = {
 			isa = PBXGroup;
 			children = (
+				F25DCD231A6674AF006D8416 /* Model */,
+				F25DCD221A66749D006D8416 /* Controllers */,
 				F25DCCBF1A6583C4006D8416 /* AppDelegate.swift */,
 				F25DCCC11A6583C4006D8416 /* ViewController.swift */,
 				F25DCCC31A6583C4006D8416 /* Main.storyboard */,
 				F25DCCC61A6583C4006D8416 /* Images.xcassets */,
 				F25DCCC81A6583C4006D8416 /* LaunchScreen.xib */,
 				F25DCCBD1A6583C4006D8416 /* Supporting Files */,
+				F25DCCDF1A6585E6006D8416 /* SwiftyJSON.swift */,
 			);
 			path = Swoofty_2;
 			sourceTree = "<group>";
@@ -98,6 +160,7 @@
 		F25DCCD21A6583C4006D8416 /* Swoofty_2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F25DCD2A1A667897006D8416 /* MockObjects */,
 				F25DCCD51A6583C4006D8416 /* Swoofty_2Tests.swift */,
 				F25DCCD31A6583C4006D8416 /* Supporting Files */,
 			);
@@ -107,9 +170,44 @@
 		F25DCCD31A6583C4006D8416 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F25DCD2E1A667970006D8416 /* TestParserData.json */,
 				F25DCCD41A6583C4006D8416 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F25DCD131A658F3B006D8416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCD191A658F3B006D8416 /* Alamofire.framework */,
+				F25DCD1B1A658F3B006D8416 /* Alamofire.framework */,
+				F25DCD1D1A658F3B006D8416 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25DCD221A66749D006D8416 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCD241A6674D8006D8416 /* PickOrderParser.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F25DCD231A6674AF006D8416 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCD271A6674EE006D8416 /* PickOrder.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F25DCD2A1A667897006D8416 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCD2B1A6678BC006D8416 /* MockOrderPickParser.swift */,
+			);
+			name = MockObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +220,12 @@
 				F25DCCB61A6583C4006D8416 /* Sources */,
 				F25DCCB71A6583C4006D8416 /* Frameworks */,
 				F25DCCB81A6583C4006D8416 /* Resources */,
+				F25DCCED1A658E2F006D8416 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F25DCD1F1A658F44006D8416 /* PBXTargetDependency */,
 			);
 			name = Swoofty_2;
 			productName = Swoofty_2;
@@ -179,6 +279,12 @@
 			mainGroup = F25DCCB11A6583C4006D8416;
 			productRefGroup = F25DCCBB1A6583C4006D8416 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F25DCD131A658F3B006D8416 /* Products */;
+					ProjectRef = F25DCD121A658F3B006D8416 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F25DCCB91A6583C4006D8416 /* Swoofty_2 */,
@@ -187,6 +293,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F25DCD191A658F3B006D8416 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = F25DCD181A658F3B006D8416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F25DCD1B1A658F3B006D8416 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = F25DCD1A1A658F3B006D8416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F25DCD1D1A658F3B006D8416 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = F25DCD1C1A658F3B006D8416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		F25DCCB81A6583C4006D8416 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -194,6 +324,7 @@
 			files = (
 				F25DCCC51A6583C4006D8416 /* Main.storyboard in Resources */,
 				F25DCCCA1A6583C4006D8416 /* LaunchScreen.xib in Resources */,
+				F25DCD2F1A667970006D8416 /* TestParserData.json in Resources */,
 				F25DCCC71A6583C4006D8416 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DCD301A667970006D8416 /* TestParserData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DCD2C1A6678BC006D8416 /* MockOrderPickParser.swift in Sources */,
+				F25DCD251A6674D8006D8416 /* PickOrderParser.swift in Sources */,
+				F25DCD281A6674EE006D8416 /* PickOrder.swift in Sources */,
+				F25DCCE01A6585E6006D8416 /* SwiftyJSON.swift in Sources */,
 				F25DCCC21A6583C4006D8416 /* ViewController.swift in Sources */,
 				F25DCCC01A6583C4006D8416 /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +357,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DCD291A6674EE006D8416 /* PickOrder.swift in Sources */,
+				F25DCD261A6674D8006D8416 /* PickOrderParser.swift in Sources */,
+				F25DCD2D1A6678BC006D8416 /* MockOrderPickParser.swift in Sources */,
 				F25DCCD61A6583C4006D8416 /* Swoofty_2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = F25DCCB91A6583C4006D8416 /* Swoofty_2 */;
 			targetProxy = F25DCCD01A6583C4006D8416 /* PBXContainerItemProxy */;
+		};
+		F25DCD1F1A658F44006D8416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = F25DCD1E1A658F44006D8416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -272,7 +416,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MARKS and SPENCER P.L.C.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MARKS and SPENCER P.L.C.";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -289,9 +434,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5ed1354d-17b2-4962-a9f2-46ce3b901d8a";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +461,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MARKS and SPENCER P.L.C.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MARKS and SPENCER P.L.C.";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -326,8 +473,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "5ed1354d-17b2-4962-a9f2-46ce3b901d8a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -339,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swoofty_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Swoofty_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
